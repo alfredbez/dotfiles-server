@@ -1,0 +1,30 @@
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule ".vim/bundle/delimitMate"]
+	path = .vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/bundle/phpcomplete.vim"]
+	path = .vim/bundle/phpcomplete.vim
+	url = https://github.com/shawncplus/phpcomplete.vim
+[submodule ".vim/bundle/php.vim"]
+	path = .vim/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim
+[submodule ".vim/bundle/vim-better-whitespace"]
+	path = .vim/bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule ".vim/bundle/vim-commentary"]
+	path = .vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule ".vim/bundle/vim-perl"]
+	path = .vim/bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl
