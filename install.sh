@@ -24,8 +24,8 @@ function symlink() {
 }
 
 # VIM stuff
-symlink "$HOME/.dotfiles/.vim" "$HOME/.vim"
-symlink "$HOME/.dotfiles/.vimrc" "$HOME/.vimrc"
+symlink "$HOME/.dotfiles-server/.vim" "$HOME/.vim"
+symlink "$HOME/.dotfiles-server/.vimrc" "$HOME/.vimrc"
 e_success "created vim symlinks"
 
 symlink "$HOME/.dotfiles-server/.bash_aliases" "$HOME/.bash_aliases"
