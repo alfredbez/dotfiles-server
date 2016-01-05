@@ -14,6 +14,7 @@ alias gs='git status'
 alias gco='git checkout'
 alias gl='git pull'
 alias gcmsg='git commit -m'
+alias gcl='git clone --recursive'
 alias h='history'
 
 PS1='\[\e[0;32m\]\u@\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
