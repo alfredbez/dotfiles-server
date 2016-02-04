@@ -51,21 +51,11 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 " Type <Space>o to open a new file
 set wildignore+=*/node_modules/*
+set wildignore+=*/vendor/*
+set wildignore+=*/bower_components/*
 nnoremap <Leader>o :CtrlP<CR>
-" Copy & paste to system clipboard with <Space>p and <Space>y
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
 " Enter visual mode with <space><space>
 nmap <Leader><Leader> V
-" expand selection to character, word, block
-" v: Selection erweitern
-" CTRL + v: Selection verringern
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
 " Go to tab by number
 noremap <leader>1 1gt
 noremap <leader>2 2gt
@@ -96,7 +86,6 @@ inoremap {<CR> {<CR>}<C-o>O
 """""""""""""""""""""""""""""
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
     \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
-omap s :normal vs<CR>
 " search for visually selected text
 vnoremap // y/<C-R>"<CR>
 
@@ -120,32 +109,28 @@ set ignorecase                              " ignore case when searching
 set smartcase                               " ignore case if search pattern is all lowercase,
                                             "   case-sensitive otherwise
 set smarttab                                " insert tabs on the start of a line according to
-                                            "shiftwidth, not tabstop
+                                            " shiftwidth, not tabstop
 set hlsearch                                " highlight search terms
 set incsearch                               " show search matches as you type
 set laststatus=2
 set timeout timeoutlen=200 ttimeoutlen=100
 set visualbell                              " don't beep
 set noerrorbells                            " don't beep
-set autowrite                               "Save on buffer switch
+set autowrite                               " Save on buffer switch
 set showcmd
 set scrolloff=3
 set encoding=utf-8
+set colorcolumn=85
+set pastetoggle=<F10>
 
 " Open splits
 nmap vs :vsplit<cr>
-nmap sp :split<cr>
-
-"Resize vsplit
-nmap <C-v> :vertical resize +5<cr>
-nmap 25 :vertical resize 40<cr>
-nmap 75 :vertical resize 120<cr>
-
-"open/toggle Nerdtree in Sidebar
-nmap <C-b> :NERDTreeToggle<cr>
-
-" Create split below
 nmap :sp :rightbelow sp<cr>
+
+" Nerdtree
+nmap <C-b> :NERDTreeToggle<cr>
+nmap <F6> :NERDTreeFind<cr>
+
 
 " move betwwen splits
 nnoremap <C-j> <C-W><C-J>
