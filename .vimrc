@@ -34,13 +34,6 @@ if exists("&undodir")
     set undodir=~/.vim/undo
 endif
 
-
-"""""""""""""""""""""""""""""
-" Show “invisible” characters
-"""""""""""""""""""""""""""""
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-
-
 """"""""""""""""""""""""""
 " Keybindings
 """"""""""""""""""""""""""
